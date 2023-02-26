@@ -9,10 +9,12 @@ public class Student {
     public Student(String name,int age){
         this.name=name;
         this.age=age;
-        this.averageScore=0;
+        //this.averageScore=0;
 
     }
+      public Student(){
 
+      }
     public String getName() {
         return name;
     }
