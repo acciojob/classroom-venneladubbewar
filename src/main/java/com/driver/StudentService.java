@@ -7,10 +7,12 @@ public class StudentService {
     StudentRepository repository = new StudentRepository();
     public void addStudent(Student student)
     {
+
         repository.addStudent(student);
     }
     public void addTeacher(Teacher teacher)
     {
+
         repository.addTeacher(teacher);
     }
     public void addStudentTeacherPair(String student,String teacher)
@@ -24,11 +26,13 @@ public class StudentService {
     }
     public Teacher getTeacherByName(String teacher)
     {
+
         return repository.getTeacherByName(teacher);
     }
 
     public List<String> getStudentsByTeacherName(String name)
     {
+
         return repository.getStudentsByTeacherName(name);
     }
     public List<String> getAllStudents()

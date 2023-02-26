@@ -54,7 +54,7 @@ public class StudentController {
 
     @GetMapping("/get-students-by-teacher-name/{teacher}")
     public ResponseEntity<List<String>> getStudentsByTeacherName(@PathVariable String teacher){
-        List<String> students = new ArrayList<>(); // Assign list of student by calling service layer method
+        List<String> students=null ;// Assign list of student by calling service layer method
         students=service.getStudentsByTeacherName(teacher);
         return new ResponseEntity<>(students, HttpStatus.CREATED);
     }
