@@ -8,16 +8,14 @@ public class Teacher {
 
     private int age;
 
-    public Teacher(){
+
+
+    public Teacher(String name,int age,int numberOfStudents) {
+        this.name=name;
+        this.age=age;
+        this.numberOfStudents=numberOfStudents;
 
     }
-
-//    public Teacher(String name,int age) {
-//        this.name=name;
-//        this.age=age;
-//        //numberOfStudents=0;
-//
-//    }
 
     public void setNumberOfStudents(int numberOfStudents) {
         this.numberOfStudents = numberOfStudents;
