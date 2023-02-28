@@ -66,10 +66,15 @@ public class StudentRepository {
         List<String> a= new ArrayList<>();
         a=teacherStudentLink.get(name);
         teacherStudentLink.remove(name);
+        for(String s: a)
+        {
+            studentDB.remove(s);
+        }
     }
     public void deleteAllTeachers()
     {
         teacherDB.clear();
+        System.out.println("delete-T "+teacherDB.size());
         teacherStudentLink.clear();
 
     }
